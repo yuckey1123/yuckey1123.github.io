@@ -13,9 +13,10 @@ export default {
 <style>
 #app {
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: #e7f1f4;
   min-height: 100vh;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 </style>

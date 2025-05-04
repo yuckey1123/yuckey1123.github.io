@@ -1,10 +1,12 @@
 <template>
   <div class="home-page">
     <header class="header">
-      <h1>ようこそ！</h1>
-      <p>私のホームページへようこそ。</p>
+      <h1>yuckey1123.github.io</h1>
     </header>
     <main class="content">
+      <div class="top-header-container">
+      <img src="/top_header.png" alt="Top Header" class="top-header" />
+    </div>
       <section class="about">
         <h2>自己紹介</h2>
         <p>名前: yuckey</p>
@@ -33,15 +35,18 @@ export default {
 </script>
 
 <style scoped>
-/* 背景を水色にしてVueのアイコンを散りばめる */
-body {
-  background-color: #add8e6; /* 水色 */
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"); /* Vueのアイコン */
-  background-repeat: repeat; /* アイコンを繰り返し表示 */
-  background-size: 100px 100px; /* アイコンのサイズ */
-  font-family: "MS PGothic", "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
+/* トップヘッダー画像のコンテナ */
+.top-header-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* トップヘッダー画像のスタイル */
+.top-header {
+  width: 100%; /* 画面幅いっぱいに表示 */
+  height: auto; /* 縦横比を維持 */
+  display: block; /* 画像の余白を削除 */
 }
 
 /* ホームページ全体のスタイル */
@@ -70,7 +75,7 @@ body {
   margin: 20px auto;
   max-width: 600px;
   background: #ffffff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
